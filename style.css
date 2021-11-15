@@ -40,6 +40,14 @@ p {
 	font-size: 25px;
 	font-weight: bold;
 	position: absolute;
+}
+
+.madeby {
 	right: 1%;
+	bottom: 1%;
+}
+
+.version {
+	left: 1%;
 	bottom: 1%;
 }
