@@ -17,6 +17,7 @@ function placement() {
 		}
 	}
 }
+var move_counter = 0;
 
 function move(row, col) {
 	var top = row - 1;
@@ -29,6 +30,9 @@ function move(row, col) {
 		var new_cell_value = document.getElementById('cell' + top + col).innerHTML;
 		document.getElementById('cell' + top + col).innerHTML = cell_value;
 		document.getElementById('cell' + row + col).innerHTML = new_cell_value;
+		move_counter++;
+		document.getElementById('move_count').innerHTML =
+			'Number of Moves: ' + move_counter;
 	} else if (
 		row != 3 &&
 		document.getElementById('cell' + bottom + col).innerHTML == ''
@@ -39,6 +43,9 @@ function move(row, col) {
 		).innerHTML;
 		document.getElementById('cell' + bottom + col).innerHTML = cell_value;
 		document.getElementById('cell' + row + col).innerHTML = new_cell_value;
+		move_counter++;
+		document.getElementById('move_count').innerHTML =
+			'Number of Moves: ' + move_counter;
 	} else if (
 		col != 0 &&
 		document.getElementById('cell' + row + left).innerHTML == ''
@@ -47,6 +54,9 @@ function move(row, col) {
 		var new_cell_value = document.getElementById('cell' + row + left).innerHTML;
 		document.getElementById('cell' + row + left).innerHTML = cell_value;
 		document.getElementById('cell' + row + col).innerHTML = new_cell_value;
+		move_counter++;
+		document.getElementById('move_count').innerHTML =
+			'Number of Moves: ' + move_counter;
 	} else if (
 		col != 3 &&
 		document.getElementById('cell' + row + right).innerHTML == ''
@@ -57,7 +67,17 @@ function move(row, col) {
 		).innerHTML;
 		document.getElementById('cell' + row + right).innerHTML = cell_value;
 		document.getElementById('cell' + row + col).innerHTML = new_cell_value;
+		move_counter++;
+		document.getElementById('move_count').innerHTML =
+			'Number of Moves: ' + move_counter;
 	}
+}
+
+function reset() {
+	move_counter = 0;
+	document.getElementById('move_count').innerHTML =
+		'Number of Moves: ' + move_counter;
+	placement();
 }
 
 placement();
