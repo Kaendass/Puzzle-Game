@@ -7,8 +7,10 @@
 		<title>Puzzle Game</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
+
 	<body>
 		<h1>Welcome to the Puzzle!</h1>
+		<button class="reset-button" onclick="reset()">Reset</button>
 		<div class="game-table">
 			<table>
 				<tr>
@@ -37,7 +39,10 @@
 				</tr>
 			</table>
 		</div>
-		<p class="version">v1.0</p>
+		<div class="move-counter">
+			<h2 id="move_count">Number of Moves: 0</h2>
+		</div>
+		<p class="version">v2.0</p>
 		<p class="madeby">Made by Kaendass</p>
 		<script src="script.js"></script>
 	</body>
