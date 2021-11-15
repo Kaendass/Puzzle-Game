@@ -1,11 +1,14 @@
+* {
+	font-family: 'Helvetica';
+}
 table {
 	font-family: 'Helvetica';
 	font-size: 70px;
 	color: #000000;
 	border: 3px solid;
 	border-collapse: collapse;
-	position: absolute;
 	top: 10vh;
+	margin-top: 5%;
 }
 
 td {
@@ -24,20 +27,20 @@ body {
 
 .game-table {
 	position: relative;
-	display: flex;
+	display: inline-block;
 	justify-content: center;
 }
 
 h1 {
-	font-family: 'Helvetica';
-	font-size: 60px;
-	margin-top: 40px;
+	font-size: 4rem;
+	margin-top: 0.5em;
 	margin-bottom: auto;
+	display: flex;
+	justify-content: center;
 }
 
 p {
-	font-family: 'Helvetica';
-	font-size: 25px;
+	font-size: 1.5rem;
 	font-weight: bold;
 	position: absolute;
 }
@@ -50,4 +53,30 @@ p {
 .version {
 	left: 1%;
 	bottom: 1%;
+}
+
+.move-counter {
+	font-size: 1.5rem;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+}
+
+.reset-button {
+	position: absolute;
+	right: 0.3em;
+	top: 0.3em;
+	font-size: 1.8rem;
+	background: #333333;
+	border-radius: 3rem;
+	-webkit-transition: all 0.15s ease-in-out;
+	transition: all 0.15s ease-in-out;
+	cursor: pointer;
+	color: white;
+	padding: 0.4em;
+	border: 0.08em solid #00d7c3;
+}
+
+.reset-button:hover {
+	color: #00d7c3;
 }
