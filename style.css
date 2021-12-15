@@ -105,17 +105,9 @@ button {
 }
 
 @media only screen and (max-width: 800px) {
-	.madeby {
-		display: none;
-	}
-	.version {
-		display: none;
-	}
-
-	.reset-button {
-		display: none;
-	}
-
+	.madeby,
+	.version,
+	.reset-button,
 	.toggle-button {
 		display: none;
 	}
