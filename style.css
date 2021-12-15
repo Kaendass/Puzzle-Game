@@ -103,3 +103,20 @@ button {
 .toggle-button:active {
 	font-size: 1.15rem;
 }
+
+@media only screen and (max-width: 800px) {
+	.madeby {
+		display: none;
+	}
+	.version {
+		display: none;
+	}
+
+	.reset-button {
+		display: none;
+	}
+
+	.toggle-button {
+		display: none;
+	}
+}
