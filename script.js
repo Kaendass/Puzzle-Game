@@ -115,5 +115,16 @@ function finish() {
 	console.log(counter);
 	counter = 0;
 }
+toggle = false;
+function bg() {
+	if (toggle) {
+		document.querySelector('table').style.backgroundColor = 'transparent';
+		toggle = false;
+	} else {
+		document.querySelector('table').style.backgroundColor = 'white';
+		toggle = true;
+	}
+}
+
 placement();
 finish();
