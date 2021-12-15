@@ -62,21 +62,44 @@ p {
 	justify-content: center;
 }
 
-.reset-button {
+button {
 	position: absolute;
-	right: 0.3em;
-	top: 0.3em;
-	font-size: 1.8rem;
-	background: #333333;
-	border-radius: 3rem;
+	border-radius: 0.8rem;
 	-webkit-transition: all 0.15s ease-in-out;
 	transition: all 0.15s ease-in-out;
-	cursor: pointer;
-	color: white;
 	padding: 0.4em;
-	border: 0.08em solid #00d7c3;
+	border: 0;
+	cursor: pointer;
+}
+
+.reset-button {
+	font-size: 1.8rem;
+	right: 0.3em;
+	top: 0.3em;
+	background-color: #ff0000;
+	color: #ffffff;
 }
 
 .reset-button:hover {
-	color: #00d7c3;
+	box-shadow: 0px 0px 12px 0px #ff5454;
+}
+
+.reset-button:active {
+	font-size: 1.7rem;
+}
+
+.toggle-button {
+	font-size: 1.22rem;
+	right: 0.31em;
+	top: 3.8em;
+	background-color: #fd641d;
+	color: #fff;
+}
+
+.toggle-button:hover {
+	box-shadow: 0px 0px 12px 0px #ff6d6d;
+}
+
+.toggle-button:active {
+	font-size: 1.15rem;
 }
