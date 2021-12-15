@@ -1,4 +1,4 @@
-# version 3.0
+# version 3.2
 
 Website Link:
 https://kaendass.github.io/Puzzle-Game/
